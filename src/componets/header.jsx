@@ -1,61 +1,68 @@
 import React, { Component } from "react";
+import logo from "../logo.svg";
+import SectionConatiner from "./section-container";
 
 class Header extends Component {
   state = {};
   render() {
     return (
       <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="d-flex flex-grow-1">
-            <span class="w-100 d-lg-none d-block"></span>
-            <a class="navbar-brand d-none d-lg-inline-block" href="#">
-              HomePage
+        <nav className="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+          <div className="container-fluid">
+            <a className="navbar-brand" href="#">
+              <img src={logo} alt="logo" height="50" width="50"></img>
+              <span className="blog-header-logo text-light">My Direct Admission</span>
             </a>
-            <a
-              class="navbar-brand-two mx-auto d-lg-none d-inline-block"
-              href="#"
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarResponsive"
             >
-              <img src="//placehold.it/40?text=LOGO" alt="logo" />
-            </a>
-            <div class="w-100 text-right">
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#myNavbar"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarResponsive">
+              <ul className="navbar-nav ml-auto">
+                <li className="nav-item active">
+                  <a className="nav-link" href="#">
+                    About Us
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    Colleges
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    Online Registration
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div
-            class="collapse navbar-collapse flex-grow-1 text-right"
-            id="myNavbar"
-          >
-            <ul class="navbar-nav ml-auto flex-nowrap">
-              <li class="nav-item">
-                <a href="#" class="nav-link m-2 menu-item nav-active">
-                  Our Solution
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link m-2 menu-item">
-                  How We Help
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link m-2 menu-item">
-                  Blog
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link m-2 menu-item">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
         </nav>
+
+        <div className="overlay"></div>
+        <video
+          playsinline="playsinline"
+          autoplay="autoplay"
+          muted="muted"
+          loop="loop"
+          width="100%"
+        >
+          <source
+            src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4"
+            type="video/mp4"
+          />
+        </video>
+
+        <SectionConatiner/>
       </div>
     );
   }

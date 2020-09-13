@@ -1,16 +1,10 @@
 import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
-import Movie from "./componets/movies";
-import Header from "./componets/header";
+import AppContainer from "./componets/app-container";
 
 function App() {
-  return (
-    <div>
-      <Header />
-      <Movie />
-    </div>
-  );
+  return <AppContainer />;
 }
 
 export default App;
