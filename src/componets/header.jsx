@@ -9,7 +9,7 @@ class Header extends Component {
       <div>
         <nav className="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
           <div className="container-fluid">
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href="https://www.google.com">
               <img src={logo} alt="logo" height="50" width="50"></img>
               <span className="blog-header-logo text-light">My Direct Admission</span>
             </a>
@@ -24,22 +24,22 @@ class Header extends Component {
             <div className="collapse navbar-collapse" id="navbarResponsive">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item active">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="https://www.google.com">
                     About Us
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="https://www.google.com">
                     Colleges
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="https://www.google.com">
                     Online Registration
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="https://www.google.com">
                     Contact Us
                   </a>
                 </li>
