@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import aboutUs from "../static/about-us.jpg";
 
-class SectionConatiner extends Component {
+class SectionContainer extends Component {
   state = {};
   render() {
     return (
@@ -86,4 +86,4 @@ class SectionConatiner extends Component {
   }
 }
 
-export default SectionConatiner;
+export default SectionContainer;

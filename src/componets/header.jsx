@@ -1,6 +1,6 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import logo from "../logo.svg";
-import SectionConatiner from "./section-container";
 
 class Header extends Component {
   state = {};
@@ -9,60 +9,29 @@ class Header extends Component {
       <div>
         <nav className="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
           <div className="container-fluid">
-            <a className="navbar-brand" href="https://www.google.com">
-              <img src={logo} alt="logo" height="50" width="50"></img>
+            <Link className="navbar-brand" to="/">
+            <img src={logo} alt="logo" height="50" width="50"></img>
               <span className="blog-header-logo text-light">My Direct Admission</span>
-            </a>
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarResponsive"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
+            </Link>
+            
             <div className="collapse navbar-collapse" id="navbarResponsive">
               <ul className="navbar-nav ml-auto">
-                <li className="nav-item active">
-                  <a className="nav-link" href="https://www.google.com">
-                    About Us
-                  </a>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/about">About Us</Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="https://www.google.com">
-                    Colleges
-                  </a>
+                  <Link className="nav-link" to="/colleges">Colleges</Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="https://www.google.com">
-                    Online Registration
-                  </a>
+                  <Link className="nav-link" to="/onlineReg">Online Registration</Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="https://www.google.com">
-                    Contact Us
-                  </a>
+                  <Link className="nav-link" to="/contactUs">Contact Us</Link>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
-
-        <div className="overlay"></div>
-        <video
-          playsinline="playsinline"
-          autoplay="autoplay"
-          muted="muted"
-          loop="loop"
-          width="100%"
-        >
-          <source
-            src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4"
-            type="video/mp4"
-          />
-        </video>
-
-        <SectionConatiner/>
       </div>
     );
   }

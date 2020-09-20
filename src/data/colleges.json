@@ -1,0 +1,94 @@
+[
+    {
+        "id": 1,
+        "name": "Indian Institute of Technology (IIT KHARAGPUR), Kharagpur",
+        "logo": "../../static/colleges/IIT-K.png",
+        "tags": [
+            {
+                "approvedBy": [
+                    "AICTE",
+                    "UGC"
+                ]
+            },
+            {
+                "type": "Public"
+            },
+            {
+                "nirfRank": 5
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Indian Institute of Technology Delhi (IITD), Delhi",
+        "logo": "../../static/colleges/IIT-D.png",
+        "tags": [
+            {
+                "approvedBy": [
+                    "AICTE"
+                ]
+            },
+            {
+                "type": "Public"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Motilal Nehru National Institute of Technology (MNNIT), Allahabad",
+        "logo": "../../static/colleges/MNIT-ALD.png",
+        "tags": [
+            {
+                "approvedBy": [
+                    "UGC"
+                ]
+            },
+            {
+                "type": "Private"
+            },
+            {
+                "nirfRank": 42
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Birla Institute of Technology and Science (BITS Pilani), Pilani",
+        "logo": "../../static/colleges/BITS.png",
+        "tags": [
+            {
+                "approvedBy": [
+                    "AICTE",
+                    "NAAC"
+                ]
+            },
+            {
+                "type": "Private"
+            },
+            {
+                "nirfRank": 39
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Birla Institute of Technology (BIT MESRA), Ranchi",
+        "logo": "../../static/colleges/BITS-Mesra.png",
+        "tags": [
+            {
+                "approvedBy": [
+                    "AICTE",
+                    "NAAC",
+                    "UGC",
+                    "NBA"
+                ]
+            },
+            {
+                "type": "Private"
+            },
+            {
+                "nirfRank": 89
+            }
+        ]
+    }
+]
